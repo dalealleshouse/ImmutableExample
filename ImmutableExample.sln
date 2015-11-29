@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImmutableExample", "ImmutableExample\ImmutableExample.csproj", "{E624BFEF-5BE8-472B-8893-D077E538231B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DomainC", "DomainC\DomainC.csproj", "{50FCE348-4C9A-4D48-86AE-348F190ED0EA}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "DomainF", "DomainF\DomainF.fsproj", "{EA8E3022-FC7F-4A6E-B797-873CD4C33CE2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E624BFEF-5BE8-472B-8893-D077E538231B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E624BFEF-5BE8-472B-8893-D077E538231B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E624BFEF-5BE8-472B-8893-D077E538231B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E624BFEF-5BE8-472B-8893-D077E538231B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50FCE348-4C9A-4D48-86AE-348F190ED0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50FCE348-4C9A-4D48-86AE-348F190ED0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50FCE348-4C9A-4D48-86AE-348F190ED0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50FCE348-4C9A-4D48-86AE-348F190ED0EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA8E3022-FC7F-4A6E-B797-873CD4C33CE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA8E3022-FC7F-4A6E-B797-873CD4C33CE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA8E3022-FC7F-4A6E-B797-873CD4C33CE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA8E3022-FC7F-4A6E-B797-873CD4C33CE2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
