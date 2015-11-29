@@ -88,15 +88,5 @@ namespace DomainC
                 return hashCode;
             }
         }
-
-        public static bool operator ==(Planet left, Planet right)
-        {
-            return Equals(left, right);
-        }
-
-        public static bool operator !=(Planet left, Planet right)
-        {
-            return !Equals(left, right);
-        }
     }
 }
