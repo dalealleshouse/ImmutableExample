@@ -50,7 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="PlanetDomainFShould - Copy.cs" />
+    <Compile Include="PlanetDomainFShould.cs" />
     <Compile Include="PlanetDomainCShould.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
