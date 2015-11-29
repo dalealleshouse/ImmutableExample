@@ -10,7 +10,6 @@ namespace DomainC
     public class Planet
     {
         public Planet(
-            int id,
             string name,
             decimal massKg,
             decimal equatorialDiameterKm,
@@ -21,7 +20,6 @@ namespace DomainC
             decimal minSurfaceTemperatureCelsius,
             decimal maxSurfaceTemperatureCelsius)
         {
-            this.Id = id;
             this.Name = name;
             this.MassKg = massKg;
             this.EquatorialDiameterKm = equatorialDiameterKm;
@@ -32,8 +30,6 @@ namespace DomainC
             this.MinSurfaceTemperatureCelsius = minSurfaceTemperatureCelsius;
             this.MaxSurfaceTemperatureCelsius = maxSurfaceTemperatureCelsius;
         }
-
-        public int Id { get; }
 
         public string Name { get; }
 
@@ -52,6 +48,7 @@ namespace DomainC
         public decimal MinSurfaceTemperatureCelsius { get; }
 
         public decimal MaxSurfaceTemperatureCelsius { get; }
+
         public override bool Equals(object obj)
         {
             if (ReferenceEquals(null, obj))
@@ -70,7 +67,7 @@ namespace DomainC
 
         protected bool Equals(Planet other)
             =>
-                this.Id == other.Id && string.Equals(this.Name, other.Name) && this.MassKg == other.MassKg && this.EquatorialDiameterKm == other.EquatorialDiameterKm
+                string.Equals(this.Name, other.Name) && this.MassKg == other.MassKg && this.EquatorialDiameterKm == other.EquatorialDiameterKm
                 && this.PolarDiameterKm == other.PolarDiameterKm && this.EquatorialCircumferenceKm == other.EquatorialCircumferenceKm
                 && this.OrbitalDistanceKm == other.OrbitalDistanceKm && this.OrbitPeriodEarthDays == other.OrbitPeriodEarthDays
                 && this.MinSurfaceTemperatureCelsius == other.MinSurfaceTemperatureCelsius && this.MaxSurfaceTemperatureCelsius == other.MaxSurfaceTemperatureCelsius;
@@ -79,8 +76,7 @@ namespace DomainC
         {
             unchecked
             {
-                var hashCode = this.Id;
-                hashCode = (hashCode * 397) ^ (this.Name?.GetHashCode() ?? 0);
+                var hashCode = (this.Name?.GetHashCode() ?? 0);
                 hashCode = (hashCode * 397) ^ this.MassKg.GetHashCode();
                 hashCode = (hashCode * 397) ^ this.EquatorialDiameterKm.GetHashCode();
                 hashCode = (hashCode * 397) ^ this.PolarDiameterKm.GetHashCode();
